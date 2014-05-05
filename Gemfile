@@ -45,7 +45,6 @@ end
 
 gem 'addressable'
 gem 'devise'
-gem 'protected_attributes'
 
 gem 'heroku'
 
