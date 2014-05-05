@@ -1,6 +1,8 @@
 MbtiDate::Application.routes.draw do
 
-  resources :users, only: [ :show, :destroy ]
+  get "users/index"
+  get "users/show"
+  # resources :users, only: [ :show, :destroy ]
   devise_for :users
 
   devise_scope :user do
