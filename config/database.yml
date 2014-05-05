@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-	encoding: unicode
+  encoding: unicode
   pool: 5
 
 # Warning: The database defined as "test" will be erased and
@@ -19,5 +19,5 @@ test:
 
 production:
   adapter: postgresql
-	encoding: unicode
+  encoding: unicode
   pool: 5
