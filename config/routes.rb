@@ -1,13 +1,10 @@
 MbtiDate::Application.routes.draw do
 
+  resources :users, only: [ :show, :destroy ]
   devise_for :users
-  get "users/index"
-  get "users/show"
-  get "users/new"
-  get "users/create"
-  get "users/edit"
-  get "users/update"
-  get "users/destroy"
-  root to: 'users#new'
+
+  devise_scope :user do
+    root to: 'devise/registrations#new'
+  end
 
 end
